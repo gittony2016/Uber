@@ -14,6 +14,8 @@
 		EA4812461CCA54D400572A02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4812441CCA54D400572A02 /* LaunchScreen.storyboard */; };
 		EA4812511CCA54D400572A02 /* UberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4812501CCA54D400572A02 /* UberTests.swift */; };
 		EA48125C1CCA54D400572A02 /* UberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA48125B1CCA54D400572A02 /* UberUITests.swift */; };
+		EA4812721CCA557900572A02 /* UberRides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA48126F1CCA555700572A02 /* UberRides.framework */; };
+		EA4812731CCA557900572A02 /* UberRides.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA48126F1CCA555700572A02 /* UberRides.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +33,91 @@
 			remoteGlobalIDString = EA4812371CCA54D400572A02;
 			remoteInfo = Uber;
 		};
+		EA48126E1CCA555700572A02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA4812691CCA555700572A02 /* UberRides.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AC0404751BFACD1D00AC1501;
+			remoteInfo = UberRides;
+		};
+		EA4812701CCA555700572A02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA4812691CCA555700572A02 /* UberRides.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AC04047F1BFACD1D00AC1501;
+			remoteInfo = UberRidesTests;
+		};
+		EA4812741CCA557900572A02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA4812691CCA555700572A02 /* UberRides.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0404741BFACD1D00AC1501;
+			remoteInfo = UberRides;
+		};
+		EA4812811CCA561D00572A02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA4812771CCA561D00572A02 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6AAC8F7619F03C2900E7A677;
+			remoteInfo = "ObjectMapper-iOS";
+		};
+		EA4812831CCA561D00572A02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA4812771CCA561D00572A02 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD1602FF1AC023D5000CD69A;
+			remoteInfo = "ObjectMapper-Mac";
+		};
+		EA4812851CCA561D00572A02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA4812771CCA561D00572A02 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A2AD03D1B2C78540097E150;
+			remoteInfo = "ObjectMapper-watchOS";
+		};
+		EA4812871CCA561D00572A02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA4812771CCA561D00572A02 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A05B7A61BE274BE00F19B53;
+			remoteInfo = "ObjectMapper-tvOS";
+		};
+		EA4812891CCA561D00572A02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA4812771CCA561D00572A02 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6AAC8F8119F03C2900E7A677;
+			remoteInfo = "ObjectMapper-iOSTests";
+		};
+		EA48128B1CCA561D00572A02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA4812771CCA561D00572A02 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD1603091AC023D6000CD69A;
+			remoteInfo = "ObjectMapper-MacTests";
+		};
+		EA48128D1CCA561D00572A02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA4812771CCA561D00572A02 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A05B7AF1BE274BE00F19B53;
+			remoteInfo = "ObjectMapper-tvOSTests";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EA4812761CCA557900572A02 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EA4812731CCA557900572A02 /* UberRides.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EA4812381CCA54D400572A02 /* Uber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uber.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +133,8 @@
 		EA4812571CCA54D400572A02 /* UberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA48125B1CCA54D400572A02 /* UberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberUITests.swift; sourceTree = "<group>"; };
 		EA48125D1CCA54D400572A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA4812691CCA555700572A02 /* UberRides.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UberRides.xcodeproj; path = "../rides-ios-sdk/source/UberRides.xcodeproj"; sourceTree = "<group>"; };
+		EA4812771CCA561D00572A02 /* ObjectMapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectMapper.xcodeproj; path = ../ObjectMapper/ObjectMapper.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA4812721CCA557900572A02 /* UberRides.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +166,8 @@
 		EA48122F1CCA54D400572A02 = {
 			isa = PBXGroup;
 			children = (
+				EA4812771CCA561D00572A02 /* ObjectMapper.xcodeproj */,
+				EA4812691CCA555700572A02 /* UberRides.xcodeproj */,
 				EA48123A1CCA54D400572A02 /* Uber */,
 				EA48124F1CCA54D400572A02 /* UberTests */,
 				EA48125A1CCA54D400572A02 /* UberUITests */,
@@ -125,6 +216,29 @@
 			path = UberUITests;
 			sourceTree = "<group>";
 		};
+		EA48126A1CCA555700572A02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA48126F1CCA555700572A02 /* UberRides.framework */,
+				EA4812711CCA555700572A02 /* UberRidesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA4812781CCA561D00572A02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA4812821CCA561D00572A02 /* ObjectMapper.framework */,
+				EA4812841CCA561D00572A02 /* ObjectMapper.framework */,
+				EA4812861CCA561D00572A02 /* ObjectMapper.framework */,
+				EA4812881CCA561D00572A02 /* ObjectMapper.framework */,
+				EA48128A1CCA561D00572A02 /* ObjectMapper-iOSTests.xctest */,
+				EA48128C1CCA561D00572A02 /* ObjectMapper-MacTests.xctest */,
+				EA48128E1CCA561D00572A02 /* ObjectMapper-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +249,12 @@
 				EA4812341CCA54D400572A02 /* Sources */,
 				EA4812351CCA54D400572A02 /* Frameworks */,
 				EA4812361CCA54D400572A02 /* Resources */,
+				EA4812761CCA557900572A02 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EA4812751CCA557900572A02 /* PBXTargetDependency */,
 			);
 			name = Uber;
 			productName = Uber;
@@ -215,6 +331,16 @@
 			mainGroup = EA48122F1CCA54D400572A02;
 			productRefGroup = EA4812391CCA54D400572A02 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EA4812781CCA561D00572A02 /* Products */;
+					ProjectRef = EA4812771CCA561D00572A02 /* ObjectMapper.xcodeproj */;
+				},
+				{
+					ProductGroup = EA48126A1CCA555700572A02 /* Products */;
+					ProjectRef = EA4812691CCA555700572A02 /* UberRides.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EA4812371CCA54D400572A02 /* Uber */,
@@ -223,6 +349,72 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EA48126F1CCA555700572A02 /* UberRides.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UberRides.framework;
+			remoteRef = EA48126E1CCA555700572A02 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EA4812711CCA555700572A02 /* UberRidesTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UberRidesTests.xctest;
+			remoteRef = EA4812701CCA555700572A02 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EA4812821CCA561D00572A02 /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = EA4812811CCA561D00572A02 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EA4812841CCA561D00572A02 /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = EA4812831CCA561D00572A02 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EA4812861CCA561D00572A02 /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = EA4812851CCA561D00572A02 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EA4812881CCA561D00572A02 /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = EA4812871CCA561D00572A02 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EA48128A1CCA561D00572A02 /* ObjectMapper-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ObjectMapper-iOSTests.xctest";
+			remoteRef = EA4812891CCA561D00572A02 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EA48128C1CCA561D00572A02 /* ObjectMapper-MacTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ObjectMapper-MacTests.xctest";
+			remoteRef = EA48128B1CCA561D00572A02 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EA48128E1CCA561D00572A02 /* ObjectMapper-tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ObjectMapper-tvOSTests.xctest";
+			remoteRef = EA48128D1CCA561D00572A02 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EA4812361CCA54D400572A02 /* Resources */ = {
@@ -289,6 +481,11 @@
 			isa = PBXTargetDependency;
 			target = EA4812371CCA54D400572A02 /* Uber */;
 			targetProxy = EA4812581CCA54D400572A02 /* PBXContainerItemProxy */;
+		};
+		EA4812751CCA557900572A02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UberRides;
+			targetProxy = EA4812741CCA557900572A02 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -401,6 +598,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Uber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Devhub-Pty-Ltd.Uber";
@@ -412,6 +610,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Uber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Devhub-Pty-Ltd.Uber";
@@ -484,6 +683,7 @@
 				EA4812621CCA54D400572A02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA4812631CCA54D400572A02 /* Build configuration list for PBXNativeTarget "UberTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +692,7 @@
 				EA4812651CCA54D400572A02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA4812661CCA54D400572A02 /* Build configuration list for PBXNativeTarget "UberUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +701,7 @@
 				EA4812681CCA54D400572A02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
